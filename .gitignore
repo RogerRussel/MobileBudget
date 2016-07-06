@@ -13,3 +13,5 @@ npm-debug.log
 
 # res
 resources/signing
+/applications/mobilebugget-phonegap/www/assets/css/app.min.css
+/applications/mobilebugget-phonegap/www/assets/js/app.min.js
