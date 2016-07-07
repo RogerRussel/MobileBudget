@@ -1,0 +1,26 @@
+{
+  "name": "MobileBuget",
+  "version": "0.0.1",
+  "description": "Another Mobile Buget",
+  "private": true,
+  "scripts": {
+    "test": "gulp test",
+    "dev": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RogerRussel/MobileBudget.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.1.4",
+    "gulp-uglify": "^1.5.3",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-watch": "^4.3.5",
+    "node-sass": "^3.7.0"
+  }
+}
