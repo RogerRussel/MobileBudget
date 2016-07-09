@@ -16,7 +16,7 @@ module.exports = function (gulp, $) {
       scriptsPrivatePath + 'vendor/angularfire/**/*.js',
       scriptsPrivatePath + 'app/**/**.js'
     ])
-    .pipe(concat(scriptsPrivatePath + '/app.js'))
+    .pipe(concat('app.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(scriptsPublicPath));
 
