@@ -13,8 +13,7 @@ function install {
 }
 
 function run {
-  echo "" #docker run --name="$GULP" -v $DIRROOT:/data -d $GULP tail -f /dev/null
-
+  docker start $GULP
 }
 
 case "$1" in
