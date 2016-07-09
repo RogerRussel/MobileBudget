@@ -10,7 +10,7 @@ module.exports = function (gulp, $) {
   var stylesheetsPublicPath = 'app/www/assets/css';
 
   gulp.task('sass', shell.task([
-    nodeCommand + ' ' + stylesheetsPrivatePath + '/app.sass ' + stylesheetsPublicPath + '/app.css'
+    nodeCommand + ' ' + stylesheetsPrivatePath + '/app.sass ' + stylesheetsPublicPath + '/app.min.css'
   ]));
 
 };
