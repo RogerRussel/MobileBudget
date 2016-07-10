@@ -2,11 +2,12 @@
 
 DIRINICIAL=$(pwd);
 DIRROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
-APP=app
-DIRAPP=$DIRROOT/$APP
+APP=$DOCKERAPPNAME
+DOCKERAPPNAME=mobilebugget-phonegap
+DIRAPP=$DIRROOT/app
 
 function install {
-  docker build -t $APP -f $DIRROOT/docker/phonegap/Dockerfile . 
+  docker build -t $DOCKERAPPNAME -f $DIRROOT/docker/phonegap/Dockerfile . 
 }
 
 function build {
@@ -14,11 +15,11 @@ function build {
 }
 
 function serve {
-  docker run -d -p 3000:3000 -v $DIRAPP:/data $APP phonegap serve -p 3000
+  docker run -d -p 3000:3000 -v $DIRAPP:/data $DOCKERAPPNAME phonegap serve -p 3000
 }
 
 function create {
-  docker run -v $DIRROOT:/data $APP phonegap create $APP
+  docker run -v $DIRROOT:/data app phonegap create $DOCKERAPPNAME
 }
 
 case "$1" in
