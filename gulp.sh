@@ -24,5 +24,5 @@ case "$1" in
     run
     ;;
   *)
-  echo "command $1 not found";
+  docker exec -it $GULP bash -c "gulp $1"
 esac

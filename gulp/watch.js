@@ -12,6 +12,7 @@ module.exports = function (gulp, $) {
       'resources/assets/sass/**/*.sass',
       'resources/assets/sass/vendor/**/*.css'
     ], ['sass']);
+    gulp.watch('gulp/**/*.js', ['default']);
   });
 
 };

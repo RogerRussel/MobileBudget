@@ -14,6 +14,7 @@ module.exports = function (gulp, $) {
       scriptsPrivatePath + 'vendor/angularjs/**/*.js',
       scriptsPrivatePath + 'vendor/firebase/**/*.js',      
       scriptsPrivatePath + 'vendor/angularfire/**/*.js',
+      scriptsPrivatePath + 'app/app.js',
       scriptsPrivatePath + 'app/**/*.js'
     ])
     .pipe(concat('app.min.js'))
