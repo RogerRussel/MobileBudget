@@ -22,6 +22,7 @@ resources/signing
 /app/platforms/browser/www/assets/js/app.min.js
 
 # android
+/app/platforms/
 /app/platforms/android/assets/www
 /app/platforms/android/bin
 /app/platforms/android/gen
