@@ -21,9 +21,13 @@ resources/signing
 /app/platforms/android/assets/www/assets/js/app.min.js
 /app/platforms/browser/www/assets/js/app.min.js
 
+# browser
+
+/app/platforms/browser/
+
 # android
-/app/platforms/
-/app/platforms/android/assets/www
+/app/platforms/android/
+/app/platforms/android/ets/www
 /app/platforms/android/bin
 /app/platforms/android/gen
 /app/platforms/android/local.properties
@@ -34,5 +38,5 @@ resources/signing
 /app/platforms/android/CordovaLib/bin
 /app/platforms/android/CordovaLib/gen
 /app/platforms/android/CordovaLib/local.properties
-resources/assets/sass/app.css
 
+resources/assets/sass/app.css
