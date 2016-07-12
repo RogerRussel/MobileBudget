@@ -1,7 +1,7 @@
 <div data-page="login-screen" class="page no-navbar no-toolbar no-swipeback">
   <div class="page-content login-screen-content">
     <div class="login-screen-title">Mobile Budget</div>
-    <form>
+    <form ng-submit="login()">
       <div class="list-block">
         <ul>
           <li class="item-content">
@@ -24,7 +24,7 @@
       </div>
       <div class="list-block">
         <ul>
-          <li><a href="#" class="item-link list-button">Sign In</a></li>
+          <li><input type="submit" type="submit" value="Sign In" />
         </ul>
         <div class="list-block-label">
           <p>Click Sign In to close Login Screen</p>
