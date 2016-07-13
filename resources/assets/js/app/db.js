@@ -1,37 +1,41 @@
-var db = (function (driver) {
+app.run(['$db', function ($db) {
 
-  var con;
+    var config = {
+      name: "myDB",
+      logging: true,
+      tables: [{
+          name: "user",
+          columns: [{
+              name: "usr_id",
+              type: "INTEGER",
+              is_null: false
+            }, {
+              name: "usr_name",
+              type: "TEXT",
+              is_null: false
+            }, {
+              name: "usr_login",
+              type: "TEXT",
+              is_null: false
+            }, {
+              name: "usr_password",
+              type: "TEXT",
+              is_null: false
+            }, {
+              name: "usr_rememberme",
+              type: "BOOLEAN",
+              is_null: false
+            },
+            {
+              name: "usr_token",
+              type: "TEXT",
+              is_null: true
+            }],
+          primary_key: ["usr_id"]
+        }]
+    };
 
-  function init(shortname, version, display, maxSize) {
+    $db.init(config);
 
-    shortname = shortname || "myDB";
-    version = version || "1.0";
-    display = display || "mySqlLiteDB";
-    maxSize = maxSize || 65536;
-
-    con = driver(shortname, version, display, maxSize);
-
-  }
-
-  /**
-   * 
-   * @param {type} query
-   * @param {type} data
-   * @param {type} callback
-   * @param {type} error
-   * @returns {undefined}
-   */
-  function execute(query, data, callback, error) {
-
-    data = data || [];
-
-    con.transaction.executeSql(query, data, callback, error);
-  }
-
-  return {
-    'init': init,
-    'con': con,
-    'exec': execute
-  };
-
-})(window.openDatabase);
+    return;
+  }]);

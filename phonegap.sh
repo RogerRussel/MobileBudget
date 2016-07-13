@@ -23,6 +23,10 @@ function serve {
   docker start $DOCKERAPPNAME
 }
 
+function plugin {
+  docker run --rm -v $DIRAPP:/data $DOCKERAPPNAME phonegap plugin add $1
+}
+
 function create {
   docker run -v $DIRROOT:/data app phonegap create $DOCKERAPPNAME
 }
@@ -39,6 +43,9 @@ case "$1" in
     ;;
   serve)
     serve
+    ;;
+  plugin)
+    plugin
     ;;
   build)
     build
