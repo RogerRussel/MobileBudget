@@ -27,6 +27,49 @@
           <li><input type="submit" type="submit" value="Sign In" />
         </ul>
         <div class="list-block-label">
+          <a ng-href=""></a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div ng-show data-page="signup-screen" class="page no-navbar no-toolbar no-swipeback">
+  <div class="page-content login-screen-content">
+    <div class="login-screen-title">Mobile Budget</div>
+    <form ng-submit="signup()">
+      <div class="list-block">
+        <ul>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-title label">Name</div>
+              <div class="item-input">
+                <input type="text" name="usr_name" placeholder="Your Name"/>
+              </div>
+            </div>
+          </li>          
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-title label">Username</div>
+              <div class="item-input">
+                <input type="text" name="usr_login" placeholder="Your username"/>
+              </div>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-title label">Password</div>
+              <div class="item-input">
+                <input type="password" name="usr_password" placeholder="Your password"/>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="list-block">
+        <ul>
+          <li><input type="submit" type="submit" value="Sign up" />
+        </ul>
+        <div class="list-block-label">
           <p>Click Sign In to close Login Screen</p>
         </div>
       </div>
