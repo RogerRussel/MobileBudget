@@ -40,3 +40,5 @@ resources/signing
 /app/platforms/android/CordovaLib/local.properties
 
 resources/assets/sass/app.css
+/app/www/assets/js/vendor.js
+/app/www/assets/js/app.js

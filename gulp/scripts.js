@@ -18,8 +18,10 @@ module.exports = function (gulp, $) {
       scriptsPrivatePath + 'app/db.js',      
       scriptsPrivatePath + 'app/**/*.js'
     ])
-    .pipe(concat('app.min.js'))
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest(scriptsPublicPath))
     .pipe(uglify())
+    .pipe(concat('app.min.js'))
     .pipe(gulp.dest(scriptsPublicPath));
 
   });
